@@ -454,9 +454,11 @@
                     </div>
                 </div>
 
+```html
 <!-- Google Map -->
 <div class="bg-slate-200 rounded-3xl overflow-hidden shadow-lg border border-slate-300 min-h-[350px] relative">
 
+    <!-- Map -->
     <iframe
         title="Google Map Location"
         class="absolute inset-0 w-full h-full border-0"
@@ -465,29 +467,42 @@
         allowfullscreen>
     </iframe>
 
-    <div class="absolute top-6 left-6 z-10 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-md">
+
+    <!-- Location Information -->
+    <div class="absolute top-6 left-6 z-10 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-md border border-white">
+
         <h4 class="font-bold text-slate-900">
             <i class="fa-solid fa-map-pin text-red-500 mr-2"></i>
             లొకేషన్ మ్యాప్
         </h4>
+
         <p class="text-xs text-slate-600 mt-1">
             ఆరేపల్లి, టేకుమట్ల మండలం, భూపాలపల్లి జిల్లా.
         </p>
+
     </div>
 
+
+    <!-- Google Maps Button -->
     <div class="absolute bottom-6 right-6 z-10">
+
         <a
-            href="https://www.google.com/maps?q=18.377339023534606,79.61485147473203"
+            href="https://www.google.com/maps/search/?api=1&query=18.377339023534606,79.61485147473203"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-xl shadow inline-flex items-center gap-2">
-            
+            class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-xl shadow inline-flex items-center space-x-2">
+
             <span>గూగుల్ మ్యాప్‌లో చూడండి</span>
+
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
         </a>
+
     </div>
 
 </div>
+
+
             </div>
         </div>
     </section>
