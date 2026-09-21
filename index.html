@@ -454,27 +454,40 @@
                     </div>
                 </div>
 
-                <!-- Google Map Placeholder Widget -->
-                <div class="bg-slate-200 rounded-3xl overflow-hidden shadow-lg border border-slate-300 min-h-[350px] relative flex flex-col justify-between p-6">
-                   
-                    <iframe 
-                        title="Google Map Location"
-                        class="absolute inset-0 w-full h-full border-0 filter grayscale opacity-80"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.3406954749016!2d79.61485147473203!3d18.377339023534606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3324f79e0dc07d%3A0x46e951b12a29d173!2sRaghavareddipet%2C%20Telangana%20506356!5e0!3m2!1sen!2sin!4v1789984095160!5m2!1sen!2sin">
-                    </iframe>
+<!-- Google Map -->
+<div class="bg-slate-200 rounded-3xl overflow-hidden shadow-lg border border-slate-300 min-h-[350px] relative">
 
+    <iframe
+        title="Google Map Location"
+        class="absolute inset-0 w-full h-full border-0"
+        src="https://www.google.com/maps?q=18.377339023534606,79.61485147473203&z=15&output=embed"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
 
-                    <div class="relative z-10 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-md border border-white">
-                        <h4 class="font-bold text-slate-900"><i class="fa-solid fa-map-pin text-red-500 mr-2"></i>లొకేషన్ మ్యాప్</h4>
-                        <p class="text-xs text-slate-600 mt-1">ఆరేపల్లి, టేకుమట్ల మండలం, భూపాలపల్లి జిల్లా.</p>
-                    </div>
-                    <div class="relative z-10 text-right">
-                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.3406954749016!2d79.61485147473203!3d18.377339023534606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3324f79e0dc07d%3A0x46e951b12a29d173!2sRaghavareddipet%2C%20Telangana%20506356!5e0!3m2!1sen!2sin!4v1789984095160!5m2!1sen!2sin"_blank" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-xl shadow inline-flex items-center space-x-2">
-                            <span>గూగుల్ మ్యాప్‌లో చూడండి</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
+    <div class="absolute top-6 left-6 z-10 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-md">
+        <h4 class="font-bold text-slate-900">
+            <i class="fa-solid fa-map-pin text-red-500 mr-2"></i>
+            లొకేషన్ మ్యాప్
+        </h4>
+        <p class="text-xs text-slate-600 mt-1">
+            ఆరేపల్లి, టేకుమట్ల మండలం, భూపాలపల్లి జిల్లా.
+        </p>
+    </div>
+
+    <div class="absolute bottom-6 right-6 z-10">
+        <a
+            href="https://www.google.com/maps?q=18.377339023534606,79.61485147473203"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-xl shadow inline-flex items-center gap-2">
+            
+            <span>గూగుల్ మ్యాప్‌లో చూడండి</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </div>
+
+</div>
             </div>
         </div>
     </section>
